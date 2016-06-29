@@ -27,6 +27,7 @@ gem 'rspec-rails'
 gem 'capybara'
 gem 'bootstrap-sass'
 gem 'bcrypt'
+gem 'factory_girl_rails', '4.2.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

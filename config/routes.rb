@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   #get 'static_pages/contact'
 
   #match '/root', to: 'static_pages#home', via: 'get'
+  #
+
+  resources :users
   root to: 'static_pages#home'
   match '/signup', to: 'users#new', via: 'get'
   match '/help', to: 'static_pages#help', via: 'get'
