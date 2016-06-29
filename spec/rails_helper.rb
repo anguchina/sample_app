@@ -57,4 +57,6 @@ RSpec.configure do |config|
 
   config.include Capybara::DSL
 
+  #config.warnings = false
+
 end
