@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+/* forms */
+
 $grayMediumLight: #eaeaea;
 
 @mixin box_sizing{
@@ -15,6 +17,21 @@ $grayMediumLight: #eaeaea;
     margin-top: 45px;
     @include box_sizing;
 }
+
+
+
+input, textarea, select, .uneditable-input{
+    border: 1px solid #bbb;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    @include box_sizing;
+}
+
+input {
+    height: auto !important;
+}
+
 
 aside {
 	section {
@@ -142,3 +159,19 @@ footer ul li {
     float: left;
     margin-left: 10px;
 }
+
+#error_explanation {
+    color: #f00;
+    ul{
+        list-style:none;
+        margin: 0 0 18px 0;
+    }
+}
+
+/*
+.field_with_errors{
+    
+    @extend .control-group;
+    @extend .error;
+}
+*/
