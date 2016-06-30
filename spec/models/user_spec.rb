@@ -18,6 +18,11 @@ require 'rails_helper.rb'
     it { should be_valid }
     it { should respond_to(:authenticate) }
 
+    describe "remember token" do
+      before { @user.save }
+      it(:remember_token) { should_not be_blank }
+    end
+
     describe "when name is not present" do
       before {@user.name = ""}
         it { should_not be_valid}
